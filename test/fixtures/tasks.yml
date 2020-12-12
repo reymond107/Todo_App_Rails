@@ -1,13 +1,18 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
+  id: 1
+  name: Personal
   detail: MyText
   date: MyDate
-  category_id: MyId
+  category_id: 1
 
 two:
+  id: 2
   name: MyString1
   detail: MyText1
   date: MyDate1
-  category_id: MyId1
+  category_id: 2
+
+
+  
