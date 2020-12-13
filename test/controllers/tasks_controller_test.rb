@@ -16,17 +16,17 @@ class TasksControllerTest < ActionDispatch::IntegrationTest
 
   test "should get new" do
     get new_category_task_path(@category)
-    assert_response :success
+    assert_response :redirect
   end
 
   test 'should create' do
     post category_tasks_path(@category), @params
-    assert_response :success
+    assert_response :redirect
   end
 
   test 'should update' do
     patch category_task_path(:id => @task.id, :category_id => @task.category_id), @params
-    assert_equal 'Personal', assigns(:task).name
+    assert_equal 'Personal', assign(:task).name
   end
 
   test 'should get delete' do 
